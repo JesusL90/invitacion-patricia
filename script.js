@@ -1,7 +1,7 @@
 // Nubes
 const nubesContainer = document.getElementById('nubes');
 for(let i = 0; i < 5; i++) {
-    const nube = document.createElement('div'); // <- aquí estaba el error
+    const nube = document.createElement('div'); 
     nube.classList.add('nube');
     nube.style.width = `${100 + Math.random() * 100}px`;
     nube.style.height = `${50 + Math.random() * 30}px`;
@@ -20,7 +20,7 @@ for (let i = 0; i < 8; i++) {
     tulipanesContainer.appendChild(tulipan);
 }
 
-
+//Lógica de los adornos
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;

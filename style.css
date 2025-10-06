@@ -1,0 +1,61 @@
+.fondo {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Foto */
+.photo img {
+    width: 100%;
+    max-width: 400px; /* ajusta según tu imagen */
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Botón Asistir */
+#btnAsistir {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+#btnAsistir:hover {
+    background: #f50057;
+    transform: scale(1.1);
+}
+
+.mapa {
+    margin: 15px 0;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+@media (max-width: 480px) {
+    .photo img {
+        max-width: 100%;
+    }
+    #btnAsistir {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
